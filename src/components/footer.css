@@ -1,0 +1,21 @@
+/* --- Footer --- */
+.footer {
+  background-color: var(--card);
+  border-color: var(--border);
+  color: var(--muted);
+  padding: 1rem 2rem;
+  text-align: center;
+  font-size: 0.95rem;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.04); /* soft shadow at top */
+  margin-top: auto; /* stick footer to bottom when content is short */
+}
+
+.footer p {
+  margin: 0;
+  font-weight: 400;
+}
+
+.footer p span {
+  color: #2563eb; /* accent to match header/quiz */
+  font-weight: 500;
+}
