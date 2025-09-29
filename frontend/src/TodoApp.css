@@ -1,0 +1,156 @@
+/* ===== Global Styles ===== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Todo App Container ===== */
+.todo-app {
+  max-width: 500px;
+  width: 90%;
+  margin: 50px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.todo-app h1 {
+  margin-bottom: 25px;
+  color: #333;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* ===== Input Section ===== */
+.input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.input-section input {
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: border-color 0.3s;
+}
+
+.input-section input:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+/* ===== Radio Buttons ===== */
+.radio-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 5px;
+}
+
+.radio-section label {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.radio-section input {
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+/* ===== Add Button ===== */
+.input-section button {
+  padding: 12px 20px;
+  border: none;
+  background: #4a90e2;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.input-section button:hover {
+  background: #357abd;
+}
+
+/* ===== Todo List ===== */
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+  font-size: 16px;
+  transition: background 0.3s;
+  text-align: left;
+}
+
+.todo-list li:last-child {
+  border-bottom: none;
+}
+
+.todo-list li.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.todo-list input[type="checkbox"] {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* ===== Delete Button ===== */
+.delete-btn {
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.delete-btn:hover {
+  background: #c0392b;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 500px) {
+  .todo-app {
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+  .todo-app h1 {
+    font-size: 1.6rem;
+  }
+
+  .input-section {
+    gap: 10px;
+  }
+
+  .input-section input,
+  .input-section button {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .todo-list li {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
